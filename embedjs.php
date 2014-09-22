@@ -10,6 +10,12 @@ class Embedjs extends Block
     public $position = View::POS_END;
     public $key;
 
+    static function begin($config)
+    {
+        $config = is_array($config) ? $config : ['position' => $config];
+        parent::begin($config);
+    }
+
     public function run()
     {
         $block = ob_get_clean();
@@ -23,6 +29,6 @@ class Embedjs extends Block
 
         $key = (empty($this->key)) ? md5($block) : $this->key;
 
-        $this->view->registerJs($block, $this->pos, $key);
+        $this->view->registerJs($block, $this->position, $key);
     }
 }
