@@ -28,4 +28,9 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \mitrii\widgets\embedjs::widget(); ?>```
+<?php \mitrii\widgets\Embedjs::begin(); ?>
+<script type="text/javascript">
+    console.log('Hello, world!');
+</script>
+<?php \mitrii\widgets\Embedjs::end(); ?>
+```
