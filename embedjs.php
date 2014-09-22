@@ -10,7 +10,7 @@ class Embedjs extends Block
     public $position = View::POS_END;
     public $key;
 
-    static function begin($config)
+    static function begin($config = [])
     {
         $config = is_array($config) ? $config : ['position' => $config];
         parent::begin($config);
