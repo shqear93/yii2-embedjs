@@ -1,0 +1,18 @@
+{
+	"name": "mitrii/yii2-embedjs",
+	"description": "Embed JS with IDE checking or intellisense",
+	"type": "yii2-extension",
+	"keywords": ["yii2","extension","js","block"],
+	"license": "BSD-4-Clause",
+	"authors": [
+		{
+			"name": "mitrii",
+			"email": "p.mitrii@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"mitrii\\widgets\\": ""
+		}
+	}
+}
