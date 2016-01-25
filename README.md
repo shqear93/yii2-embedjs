@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist mitrii/yii2-embedjs "*"
+php composer.phar require --prefer-dist shqear/yii2-embedjs "*"
 ```
 
 or add
 
 ```
-"mitrii/yii2-embedjs": "*"
+"shqear/yii2-embedjs": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,9 +28,9 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?php \mitrii\widgets\Embedjs::begin(); ?>
+<?php \shqear\widgets\Embedjs::begin(); ?>
 <script type="text/javascript">
     console.log('Hello, world!');
 </script>
-<?php \mitrii\widgets\Embedjs::end(); ?>
+<?php \shqear\widgets\Embedjs::end(); ?>
 ```

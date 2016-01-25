@@ -1,9 +1,9 @@
 <?php
 
-namespace mitrii\widgets;
+namespace shqear\widgets;
 
-use yii\web\View ;
-use yii\widgets\Block ;
+use yii\web\View;
+use yii\widgets\Block;
 
 class Embedjs extends Block
 {
@@ -27,11 +27,11 @@ class Embedjs extends Block
     {
         $block = ob_get_clean();
 
-        $block = trim($block) ;
+        $block = trim($block);
 
-        $jsBlockPattern  = '|^<script[^>]*>(?P<block_content>.+?)</script>$|is';
-        if(preg_match($jsBlockPattern,$block,$matches)){
-            $block =  $matches['block_content'];
+        $jsBlockPattern = '|^<script[^>]*>(?P<block_content>.+?)</script>$|is';
+        if (preg_match($jsBlockPattern, $block, $matches)) {
+            $block = $matches['block_content'];
         }
 
         $key = (empty($this->key)) ? md5($block) : $this->key;
