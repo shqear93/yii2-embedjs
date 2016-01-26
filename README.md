@@ -36,3 +36,11 @@ Once the extension is installed, simply use it in your code by  :
 </script>
 <?php \shqear\widgets\Embedjs::end(); ?>
 ```
+Or with 'position' option (The default option is POS_END)
+```php
+<?php \shqear\widgets\Embedjs::begin(['position' => \yii\web\View::POS_READY]); ?>
+<script type="text/javascript">
+    console.log('Hello, world!');
+</script>
+<?php \shqear\widgets\Embedjs::end(); ?>
+```
