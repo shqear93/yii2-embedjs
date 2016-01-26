@@ -1,3 +1,5 @@
+this is a fork package from [mitrii/yii2-embedjs](https://github.com/mitrii/yii2-embedjs.git)
+
 Yii2 embed JS
 =============
 Embed JS with IDE checking or intellisense
