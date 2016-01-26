@@ -1,6 +1,6 @@
 {
   "name": "shqear/yii2-embedjs",
-  "description": "Embed JS with IDE checking or intelligence.",
+  "description": "Embed JS with IDE checking or intellisense.",
   "keywords": [
     "javascript",
     "js",
